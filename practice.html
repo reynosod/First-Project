@@ -1,87 +1,70 @@
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a70b57d8df.js" crossorigin="anonymous"></script>
-    <title>Project</title>
-</head>
-    </p> 
-</div>
-<body>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>  
+      About Us
+    </title>
 
-    <!--Navigation Links-->
-        <div class="nav">
-            <ul>
-                <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#about"><i class="fas fa-user-friends"></i>About</a></li>
-                <li><a href="#contacts"><i class="fas fa-id-card"></i>Contacts</a></li>
-            </ul>
-        </div>
-    <!--Section 1-->
-        <div class="section1">
-            <h1></h1>
-        </div>
-    <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+  <body style="background-image: url(toddleswim.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-  
-          
-  
-        </div>
-            <div class="section-one container"> 
-            SECTION ONE
+    
+      <div class="slide"> 
+        <div class="header">
+            <div class="nav">
+              <ul>
+                  <li><a href="#"> Home </a> </li>
+                  <li><a href="#"> Lessons </a> </li>
+                  <li><a href="#"> About </a> </li>
+                  <li><a href="#"> Contact </a> </li>
+              </ul>
             </div>
-
-            <div class="section-two container">
-                SECTION TWO
-            </div>
-  
-        <hr class="clearfix w-100 d-md-none pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Home</a>
-            </li>
-            <li>
-              <a href="#!">About us</a>
-            </li>
-            <li>
-              <a href="#!"> Contact us</a>
-            </li>
-          </ul>
-  
-        </div>
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> Company name</a>
+      </div>
     </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
-        <script src="/main.js"></script>
-    <script>
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"</script>
-</body>
+  </div>
+  </body>
+
+        <div class="slide-container">
+          <img class="slide-image" src="swimbaby.jpg" style="width:70%">
+          <img class="slide-image" src="groupswim.jpg" style="width:70%">
+          <img class="slide-image" src="infantswim.jpeg" style="width:70%">
+        </div>
+  </div>
+    <div class="about-us">
+      <h1> About us: </h1>
+          <p> The success of our program relies heavily <br>
+          on our instructors. We're very selective <br> 
+          on the energy and enthusiasm we bring into <br>
+          our home. <br> <br>
+          Swim Shark has over 100 years of experience <br>
+          and has had great success in preparing children <br>
+          and adults for their greatest experience in <br>
+          the water. <br> <br>
+          In addition to our five locations throughout NYC, <br>
+          we are thrilled to announce our new "drive thru" <br>
+          swim program starting in the summer of 2022! <br>
+          Stay tuned!
+          </p>
+        <script>
+          var myIndex = 1;
+          carousel(myIndex);
+          
+          function carousel(n) {
+            var i;
+            var x = document.getElementsByClassName("slide-image");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+</div>    
 </html>
