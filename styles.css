@@ -1,6 +1,10 @@
 *{
-   padding: 1px; 
-   margin: 1px;
+padding: 0px; 
+margin: 0px;
+background-image: url(toddleswim.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
 .wrapper{
    width: 100%;
@@ -11,7 +15,7 @@
    list-style: none;
    display: inline-block;
 }
-.nav ul li a{
+.nav ul li a {
    display: block;
    padding: 10px; 
    color:white;
@@ -22,12 +26,14 @@
    float: right
 }
 .about-us {
+   margin: 10px;
+   padding: 10px;
    border-radius: 10px;
    position: absolute;
    top: 20%;
    left: 15%;
    transform: translate(-50%,-50%);
-   color: wheat; 
+   color: darkblue; 
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: 15px;
    text-align: center;
